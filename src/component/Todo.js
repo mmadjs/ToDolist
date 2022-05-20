@@ -1,11 +1,11 @@
-const Todo = ({todo,onCompelte}) => {
+const Todo = ({todo,onCompelte,onDelet}) => {
     return ( <div className="todo-container" >
     <div key={todo.id} className="todo"> 
         <div className="main-todo">
-            <div className={todo.isCompleated ? "completedTrue" : ""} >{todo.text}</div>
+            <div onClick={onCompelte} className={todo.isCompleated ? "completedTrue" : ""} >{todo.text}</div>
             <div>
                 <button >Edit</button>
-                <button onClick={onCompelte} >complete</button>
+                <button onClick={onDelet} >Delet</button>
             </div>
         </div>
 

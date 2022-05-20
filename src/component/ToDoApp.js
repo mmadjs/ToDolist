@@ -22,9 +22,15 @@ const completeTodo=(id)=>{
 
     
 }
+const DleteTodo =(id)=>{
+    console.log(id);
+    const delet =todos.filter((todo)=>todo.id !==id);
+    setTodo(delet)
+    
+}
     return ( <div className="container" >
         <ToDoForm addToDoHandler={addToDoHandler}/>
-        <ToDoList todos={todos} onCompeltehandler={completeTodo} />
+        <ToDoList todos={todos} onCompeltehandler={completeTodo} onDeletHandler={DleteTodo}/>
 
     </div> );
 }
