@@ -4,7 +4,9 @@ const ToDoList = ({todos,onCompeltehandler}) => {
 
     return ( <div className="todo" >
 {todos.map((todo)=>{
+    
   return <Todo key={todo.id} todo={todo}
+
     onCompelte={()=>onCompeltehandler(todo.id)} />
    
 })}

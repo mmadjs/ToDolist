@@ -30,3 +30,9 @@ width: 100%;
 .todo button{
   margin: 10px 5px;
 }
+
+.completedTrue{
+  text-decoration: line-through;
+  color: forestgreen;
+
+}
