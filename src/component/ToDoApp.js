@@ -14,7 +14,7 @@ const completeTodo=(id)=>{
 }
     return ( <div className="container" >
         <ToDoForm addToDoHandler={addToDoHandler}/>
-        <ToDoList todos={todos} onCompeltehandler={completeTodo} />
+        <ToDoList todos={todos} onCompeltehandler   ={completeTodo} />
 
     </div> );
 }

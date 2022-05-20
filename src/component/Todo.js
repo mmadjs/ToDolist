@@ -1,7 +1,7 @@
 const Todo = ({todo,onCompelte}) => {
-    return ( <div className="todo">
-    <div key={todo.id}> 
-        <div>
+    return ( <div className="todo-container" >
+    <div key={todo.id} className="todo"> 
+        <div className="main-todo">
             <div>{todo.text}</div>
             <div>
                 <button >Edit</button>
