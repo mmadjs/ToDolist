@@ -25,14 +25,30 @@ width: 100%;
   align-items: center;
   margin: 10px;
   width: 100%;
+  cursor: pointer;
+
 }
 
-.todo button{
+ button{
   margin: 10px 5px;
+  background-color: rgba(4, 183, 228, 0.733);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding:10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
 }
 
 .completedTrue{
   text-decoration: line-through;
   color: forestgreen;
+}
+
+ input{
+  padding:5px 10px;
+  background-color: rgba(5, 5, 133, 0.301);
+  border-radius: 10px;
 
 }
