@@ -6,26 +6,30 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 
 }
 .todo-container{
-width: 100%;
+width: 29rem;
+border: 2px solid rgb(59, 50, 50);
+margin-top: 10px;
 }
 .todo{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
   width: 100%;
   margin: 0 12px;
+  
 }
-.main-todo{
+.main-todo {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin: 10px;
   width: 100%;
   cursor: pointer;
+  flex-direction: row;
 
 }
 
@@ -50,5 +54,60 @@ width: 100%;
   padding:5px 10px;
   background-color: rgba(5, 5, 133, 0.301);
   border-radius: 10px;
+  border: 1px solid blueviolet;
 
+}
+.input:focus{
+  border: 2px solid blueviolet!important;
+}
+.formcontorl{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%formcontorl;
+  margin-bottom: 10px;
+}
+.edit-button{
+
+   background-color: rgb(235, 222, 222);
+   border: 1px solid yellow;
+  color: black;
+}
+
+.delet-button{
+  border: 1px solid red;
+background-color: rgba(255, 51, 0, 0.486);
+color: black;
+}
+
+.btn-addtodo{
+  background-color:rgba(0, 255, 0, 0.384);
+  padding: 10px 30px;
+  border:1px solid rgb(4, 172, 102);
+  font-size: 17px;
+  font-weight: 800;
+  color: rgb(153, 0, 255);
+}
+
+.btn-update{
+  padding: 10px 30px;
+  border:1px solid rgb(4, 172, 102);
+  background-color: rgba(137, 43, 226, 0.63);
+  font-size: 20px;
+  color: rgb(7, 231, 7);
+  font-weight: 700;
+  
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header span{
+  background-color: blueviolet;
+  padding: 5px 10px;
+  border-radius: 90%;
+  color: yellow;
+  margin-right: 10px;
 }

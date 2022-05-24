@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Todo from "./Todo";
 import ToDoForm from "./ToDoForm";
+
 const ToDoList = ({todos,onCompeltehandler,onDeletHandler,onUpdateTodo}) => {
     const [edit , setEdit]=useState({id:null,text:"" , isCompelted:false})
     
@@ -18,6 +19,7 @@ const renderTodo=()=>{
         onCompelte={()=>onCompeltehandler(todo.id)}
         onDelet={()=>onDeletHandler(todo.id)} 
         onEdit={()=>setEdit(todo)}   />
+        
        
 );
 });
