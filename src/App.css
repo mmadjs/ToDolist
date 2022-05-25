@@ -13,6 +13,9 @@
 width: 29rem;
 border: 2px solid rgb(59, 50, 50);
 margin-top: 10px;
+background-color: aqua;
+border-radius: 10%;
+box-sizing: border-box;
 }
 .todo{
   display: flex;
@@ -57,14 +60,14 @@ margin-top: 10px;
   border: 1px solid blueviolet;
 
 }
-.input:focus{
+input:focus{
   border: 2px solid blueviolet!important;
 }
 .formcontorl{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%formcontorl;
+  width: 100%;
   margin-bottom: 10px;
 }
 .edit-button{
@@ -76,7 +79,7 @@ margin-top: 10px;
 
 .delet-button{
   border: 1px solid red;
-background-color: rgba(255, 51, 0, 0.486);
+background-color: #fa0a0af6;
 color: black;
 }
 
